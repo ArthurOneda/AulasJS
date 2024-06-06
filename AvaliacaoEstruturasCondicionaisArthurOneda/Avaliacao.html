@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Avaliação</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            var idade = parseInt(prompt('Digite a sua idade: '));
+            var ingresso = parseFloat(prompt('Digite o valor do ingresso: '));
+            var meia = ingresso / 2;
+            if (idade <= 3) {
+                alert('Você não precisa pagar o ingresso.');
+            } else if (idade >= 12 && idade <= 59) {
+                alert('O valor do seu ingresso é ' + ingresso);
+            } else {
+                alert('O valor do seu ingresso é ' + meia.toFixed(2));
+            }
+            ;
+        </script>
+    </body>
+</html>
