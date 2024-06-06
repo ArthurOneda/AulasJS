@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercício 9</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            var salario = parseFloat(prompt('Digite seu salário: '));
+            var conta = parseFloat(prompt('Digite o valor da sua conta: '));
+            var porcentagem = parseFloat(prompt('Digite a porcentagem de multa por atraso: '));
+            var acrescimo = (conta / 100) * porcentagem;
+            var multa = conta + acrescimo;
+            var resto = salario - multa;
+            alert('O valor restanta do seu salario será de ' + resto);
+        </script>
+    </body>
+</html>

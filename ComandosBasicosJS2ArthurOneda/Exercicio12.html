@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercício 12</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            var valorHora = parseFloat(prompt('Digite quanto você ganha por hora: '));
+            var horasMes = parseFloat(prompt('Digite quantas horas você trabalha por mês: '));
+            var horaExtra = parseFloat(prompt('Digite quantas horas extras você fez: '));
+            var salario = valorHora * horasMes;
+            var porcentagem = (valorHora / 100) * 10;
+            var valorExtra = (valorHora + porcentagem) * horaExtra;
+            var salarioFinal = salario + valorExtra;
+            alert('O valor do salário total é de R$' + salarioFinal);
+        </script>
+    </body>
+</html>
