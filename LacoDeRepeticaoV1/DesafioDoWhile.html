@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Do While Desafio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            var somaN = 0;
+            do {
+                var n = parseInt(prompt('Digite um número: '));
+                somaN = n + somaN;
+                var sair = confirm('Deseja cadastrar outro número?');
+            } while (sair === true);
+            alert('A soma dos números é de ' + somaN);
+        </script>
+    </body>
+</html>

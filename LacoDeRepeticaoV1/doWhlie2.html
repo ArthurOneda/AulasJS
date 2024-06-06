@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Do While 2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            var nAlunos = parseInt(prompt('Digite o número de alunos: '));
+            var somaIdades = 0;
+            var incremento = 1;
+            do {
+                var idade = parseInt(prompt('Digite a idade do ' + incremento + 'º aluno.'));
+                somaIdades = idade + somaIdades;
+                incremento++;
+            } while (incremento <= nAlunos);
+            var media = somaIdades / nAlunos;
+            alert('A média das idades é ' + media.toFixed(2));
+        </script>
+    </body>
+</html>

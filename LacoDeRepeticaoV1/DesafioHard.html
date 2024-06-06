@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Desafio Hard</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            do {
+                var nome = prompt('Digite seu nome completo: ');
+                var cont = 1;
+                var somaNotas = 0;
+                for (var i = 0; i < 4; i++) {
+                    var nota = parseFloat(prompt('Digite a ' + cont + 'ª nota.'));
+                    while (nota < 0 || nota > 10) {
+                        nota = parseFloat(prompt('Nota inválida. Digite novamente.'));  
+                    }
+                    cont++;
+                    somaNotas = nota + somaNotas;
+                }
+                media = somaNotas / 4;
+                if (media >= 6) {
+                    alert('Aprovado.');
+                } else {
+                    alert('Reprovado.');
+                }
+                var sair = confirm('Deseja cadastrar outro aluno?');
+            } while (sair === true);
+            
+        </script>
+    </body>
+</html>
