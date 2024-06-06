@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exemplo 5</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            alert('\u262D  Cadastro de Estudante \u262D\nPreencha as informações a seguir: ');
+            var nome = prompt('Digite seu nome: ');
+            var nota1 = parseFloat(prompt('Digite a 1º nota: '));
+            var nota2 = parseFloat(prompt('Digite a 2º nota: '));
+            var nota3 = parseFloat(prompt('Digite a 3º nota: '));
+            var media = (nota1 + nota2 + nota3) / 3;
+            document.write('Nome: ' + nome + '<br>');
+            document.write('Média: ' + media.toFixed(2) + '<br>');
+            if (media >= 6) {
+                document.write('Aprovado');
+            } else {
+                document.write('Reprovado');
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exemplo 4</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            var idade = parseInt(prompt('Digite sua idade: '));
+            if (idade <= 15) {
+                alert('Você não pode votar.');
+            } else if (idade === 16 || idade === 17) {
+                alert('Seu voto é falcutativo.');
+            } else if (idade >= 18 && idade < 70) {
+                alert('Seu voto é obrigatório.');
+            } else {
+                alert('Seu voto é falcutativo.');
+            }
+        </script>
+    </body>
+</html>

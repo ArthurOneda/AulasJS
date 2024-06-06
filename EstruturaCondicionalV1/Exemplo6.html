@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exemplo 6</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            var nota1 = parseFloat(prompt('Digite a 1º nota: '));
+            var nota2 = parseFloat(prompt('Digite a 2º nota: '));
+            var nota3 = parseFloat(prompt('Digite a 3º nota: '));
+            var nota4 = parseFloat(prompt('Digite a 4º nota: '));
+            var frequencia = parseFloat(prompt('Digite sua frequência em porcentagem: '));
+            var media = (nota1 + nota2 + nota3 + nota4) / 4;
+            if (frequencia < 75 || media < 1.67) {
+                alert('Você foi reprovado.');
+            } else if (media < 7 && media >= 1.67) {
+                alert('Você está em exame.');
+            } else {
+                alert('Você foi aprovado.');
+            }
+        </script>
+    </body>
+</html>
