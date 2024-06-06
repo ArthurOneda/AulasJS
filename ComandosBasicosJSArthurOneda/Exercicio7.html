@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercício 7</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            var salarioHora = parseFloat(prompt('Quanto você ganha por hora? '));
+            var horaPorMes = parseFloat(prompt('Quantas horas você trabalha por mês? '));
+            var salarioMes = (salarioHora * horaPorMes);
+            var INSS = (salarioMes / 100) * 8;
+            var IR = (salarioMes / 100) * 11;
+            var sindicato = (salarioMes / 100) * 5;
+            var salarioLiquido = salarioMes - INSS - IR - sindicato;
+            alert('O salário bruto é de R$' + salarioMes);
+            alert('O valor do INSS é de R$' + INSS);
+            alert('O valor do IR é de R$' + IR);
+            alert('O valor do sindicato é de R$' + sindicato);
+            alert('O salário líquido é de R$' + salarioLiquido);
+        </script>
+    </body>
+</html>

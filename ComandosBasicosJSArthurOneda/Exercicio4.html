@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercício 4</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            var cateto1 = parseFloat(prompt('Digite o valor de um cateto: '));
+            var cateto2 = parseFloat(prompt('Digite o valor de outro cateto: '));
+            var cateto1quadrado = Math.pow(cateto1,2);
+            var cateto2quadrado = Math.pow(cateto2,2);
+            var hipotenusaquadrado = cateto1quadrado + cateto2quadrado;
+            var hipotenusa = Math.sqrt(hipotenusaquadrado);
+            alert('O valor da hipotenusa é ' + hipotenusa.toFixed(2));
+        </script>
+    </body>
+</html>

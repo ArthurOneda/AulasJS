@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercício 5</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            var valor = parseFloat(prompt('Digite o valor da compra: '));
+            var desconto = (valor / 100) * 20;
+            var avista = valor - desconto;
+            var acrescimo = (valor / 100) * 10;
+            var valorEacrescimo = valor + acrescimo;
+            var emDuasVezes = (valor + acrescimo) / 2;
+            alert('Caso seja feito avista o valor da compra será de: R$' + avista);
+            alert('Caso seja a prazo o valor da compra será de: R$' + valor);
+            alert('Caso seja pago em 2 vezes o valor da compra será de ' + valorEacrescimo + ' reais e o valor da parcela será de ' + emDuasVezes + ' reais.');
+        </script>
+    </body>
+</html>
